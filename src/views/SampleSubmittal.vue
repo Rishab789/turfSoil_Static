@@ -3,24 +3,24 @@ import leaf from "./../assets/Home images/tea-leaves.png";
 import box from "./../assets/Home images/Box.jpg";
 </script>
 <template>
-  <main class="px-24">
+  <main class="px-5 md:px-24 lg:px-24">
     <div>
-      <p class="text-5xl text-center">
+      <p class="text-2xl md:text-4xl lg:text-5xl text-center my-5">
         Sending in samples to <br />
         ​​​​​​​Turf & Soil Diagnostics?
       </p>
       <p class="flex items-center justify-center my-5">
         <img :src="leaf" width="40" />
-        <a href="#" class="underline text-xl">
+        <a href="#" class="underline text-lg md:text-xl lg:text-xl">
           Click Here for quick access to TSD Sample Submittal Form</a
         >
       </p>
     </div>
     <!--  -->
-    <div class="flex my-5">
+    <div class="flex flex-col lg:flex-row my-5">
       <div>
-        <img :src="box" />
-        <p class="text-sm font-semibold w-3/4 my-5">
+        <img :src="box" class="mx-auto lg:m-0" />
+        <p class="text-sm font-semibold lg:w-3/4 my-5">
           Below are forms and permits that are encouraged or required when
           sending samples to our labs. Please feel free to contact us via phone
           or email prior to sending samples, if you have any questions or
@@ -65,7 +65,9 @@ import box from "./../assets/Home images/Box.jpg";
     </div>
     <!--  -->
     <div class="text-sm my-5">
-      <p class="text-4xl text-center my-5">Submittal Form</p>
+      <p class="text-2xl md:text-4xl lg:text-5xl text-center my-5">
+        Submittal Form
+      </p>
       <p>
         <span class="text-red-600 my-5"
           >A completed Turf & Soil Diagnostics Submittal Form (link below)</span
@@ -87,7 +89,9 @@ import box from "./../assets/Home images/Box.jpg";
         In summary, a completed submittal form allows your testing to be
         performed in an efficient manner.
       </p>
-      <div class="flex gap-x-36 my-5">
+      <div
+        class="flex flex-col md:flex-row lg:flex-row gap-x-36 my-5 gap-y-5 md:gap-y-0 lg:gap-y-0"
+      >
         <p>
           - For samples being sent to our Kansas lab, ship to: Turf & Soil
           Diagnostics - KS 613 E. 1st Street Linwood, KS 66052 USA
@@ -100,8 +104,10 @@ import box from "./../assets/Home images/Box.jpg";
     </div>
     <!--  -->
     <div>
-      <p class="text-4xl text-center my-5">Soil Permits</p>
-      <div class="w-1/2 text-sm">
+      <p class="text-2xl md:text-4xl lg:text-5xl text-center my-5">
+        Soil Permits
+      </p>
+      <div class="lg:w-1/2 text-sm">
         <p class="text-red-600">
           Soil import permits allow our labs the ability to accept soil samples
           from around the globe for testing.
@@ -122,7 +128,9 @@ import box from "./../assets/Home images/Box.jpg";
       </div>
     </div>
     <!--  -->
-    <div class="flex text-sm justify-between">
+    <div
+      class="flex flex-col gap-y-5 md:flex-row lg:flex-row text-sm justify-between"
+    >
       <div class="">
         <p class="flex items-center">
           <img :src="leaf" width="40" />

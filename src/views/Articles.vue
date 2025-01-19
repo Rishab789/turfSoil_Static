@@ -5,17 +5,19 @@ import plant from "./../assets/Home images/sedum-growing-media.jpg";
 import labMan from "./../assets/Home images/labMan.jpg";
 </script>
 <template>
-  <main class="px-24 my-5">
+  <main class="px-5 md:px-24 lg:px-24 my-5">
     <div>
-      <p class="text-5xl text-center my-5">
+      <p class="text-3xl md:text-4xl lg:text-5xl text-center my-5">
         Useful Documents and Articles Library
       </p>
       <p class="text-xl text-red-700 text-center">
         On this page you will find links to documents, articles and newsletters
         prepared by our staff or select guests.
       </p>
-      <div class="flex my-10">
-        <div class="w-1/3 flex flex-col justify-center items-center gap-y-5">
+      <div class="flex flex-col md:flex-row lg:flex-row my-10">
+        <div
+          class="md:w-1/3 lg:w-1/3 flex flex-col justify-center items-center gap-y-5"
+        >
           <img :src="golfField" />
           <p class="text-xl text-center">
             Golf & Sports Field<br />
@@ -32,7 +34,9 @@ import labMan from "./../assets/Home images/labMan.jpg";
           <a href="#">ASTM Guide for Sand-Based Athletic Fields </a>
           <a href="#">Helpful Sampling Information </a>
         </div>
-        <div class="w-1/3 flex flex-col justify-center items-center gap-y-5">
+        <div
+          class="md:w-1/3 lg:w-1/3 flex flex-col justify-center items-center gap-y-5"
+        >
           <img :src="golfMan" />
           <p class="text-xl text-center">
             Gmax<br />
@@ -45,7 +49,9 @@ import labMan from "./../assets/Home images/labMan.jpg";
           <a href="#">Growing Media - Size Matters</a>
           <a href="#">Dirty Thoughts</a>
         </div>
-        <div class="w-1/3 flex flex-col justify-center items-center gap-y-5">
+        <div
+          class="md:w-1/3 lg:w-1/3 flex flex-col justify-center items-center gap-y-5"
+        >
           <img :src="labMan" />
           <p class="text-xl">
             General Testing and<br />

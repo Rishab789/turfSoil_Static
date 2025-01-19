@@ -7,7 +7,9 @@ const route = useRoute();
 </script>
 
 <template>
-  <Header v-if="!route.meta.noHeaderFooter" />
+  <div class="">
+    <Header v-if="!route.meta.noHeaderFooter" />
+  </div>
   <main class="">
     <RouterView />
   </main>

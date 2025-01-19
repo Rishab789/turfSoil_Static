@@ -4,12 +4,12 @@ import image2 from "./../assets/Home images/hand_holding_a_seedling_and.jpg";
 </script>
 
 <template>
-  <main class="px-36 text-sm">
-    <div class="text-4xl text-center my-5">
+  <main class="px-5 md:px-24 lg:px-24 text-sm">
+    <div class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center my-5">
       Landscape/ Specialty Soil Testing
     </div>
-    <div class="flex gap-x-10">
-      <div class="w-1/2 flex flex-col justify-center items-center">
+    <div class="flex flex-col md:flex-row lg:flex-row gap-x-10">
+      <div class="md:w-1/2 lg:w-1/2 flex flex-col justify-center items-center">
         <img :src="image1" />
         <p class="my-5">
           <span class="text-red-400"
@@ -27,7 +27,7 @@ import image2 from "./../assets/Home images/hand_holding_a_seedling_and.jpg";
           water movement and retention.
         </p>
       </div>
-      <div class="w-1/2 flex flex-col justify-center items-center">
+      <div class="md:w-1/2 lg:w-1/2 flex flex-col justify-center items-center">
         <img :src="image2" />
         <p class="text-red-400 my-5">
           Building a retention basin, structural soil, or other engineered soil?

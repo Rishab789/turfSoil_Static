@@ -2,19 +2,31 @@
 import { RouterLink } from "vue-router";
 import testBottles from "./../assets/Home images/testBottles.jpg";
 import bunkerSeeds from "./../assets/Home images/BunkerSeeds.jpg";
+
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const handleNavigation = (event: Event) => {
+  const selectedPath = (event.target as HTMLSelectElement).value;
+  if (selectedPath) {
+    router.push(selectedPath);
+  }
+};
 </script>
 <template>
   <main class="my-48 text-sm">
-    <div class="px-24">
-      <p class="text-5xl text-center my-10">Turf & Soil Diagnostics</p>
+    <div class="px-5 md:px-24 lg:px-24">
+      <p class="text-3xl md:text-4xl lg:text-5xl text-center my-10">
+        Turf & Soil Diagnostics
+      </p>
       <p class="text-3xl text-center my-5">
         Brief Descriptions of Some of our most common Soil Tests
       </p>
       <p class="my-5">
         Some of our most common golf and sports turf tests are described below.
       </p>
-      <div class="flex items-center">
-        <div class="w-3/4">
+      <div class="flex flex-col md:flex-row lg:flex-row items-center">
+        <div class="md:w-3/4 lg:w-3/4">
           <p class="my-5">
             <span class="text-red-700">Particle Size Analysis:</span>
             Particle Size Analysis (PSA) is one of the most descriptive analyses
@@ -40,8 +52,8 @@ import bunkerSeeds from "./../assets/Home images/BunkerSeeds.jpg";
             chemical performance of a sand or soil.
           </p>
         </div>
-        <div class="w-1/4">
-          <img :src="testBottles" />
+        <div class="md:w-1/4 lg:w-1/4">
+          <img :src="testBottles" class="m-auto md:m-0 lg:m-0" />
           <p>Soil Texture Test Cylinders with varying amounts of silt & clay</p>
         </div>
       </div>
@@ -150,8 +162,8 @@ import bunkerSeeds from "./../assets/Home images/BunkerSeeds.jpg";
         moisture. The Kansas laboratory is also equipped with Tempe cells for
         low soil tension evaluation from 10 centimeters to 1000 centimeters.
       </p>
-      <div class="my-5 flex gap-x-10">
-        <p class="w-3/4">
+      <div class="my-5 flex flex-col md:flex-row lg:flex-row gap-x-10">
+        <p class="md:w-3/4 lg:w-3/4">
           <span class="text-red-700">Bunker Sand Testing:</span> The bunker sand
           testing package provides data indicating ball lie characteristics
           (fried egg lie testing), sand size shape & color, drainage
@@ -161,12 +173,12 @@ import bunkerSeeds from "./../assets/Home images/BunkerSeeds.jpg";
           concerning optimum bunker sand depths. We also offer angle of repose
           testing to evaluate whether sands are suitable steep bunker faces.
         </p>
-        <div class="w-1/4">
-          <img :src="bunkerSeeds" />
-          <p>Photomicrograph of Bunker Sand.</p>
+        <div class="md:w-1/4 lg:w-1/4">
+          <img :src="bunkerSeeds" class="m-auto md:m-0 lg:m-0" />
+          <p class="text-center">Photomicrograph of Bunker Sand.</p>
         </div>
       </div>
-      <div class="flex justify-center my-10">
+      <div class="lg:flex justify-center my-10 hidden">
         <ul class="flex gap-x-8 list-menu">
           <RouterLink to="/greenRoofs"><li>GREEN ROOFS</li></RouterLink>
 
@@ -181,6 +193,21 @@ import bunkerSeeds from "./../assets/Home images/BunkerSeeds.jpg";
             ><li>LANDSCAPE/SPECIALITY SOILS</li></RouterLink
           >
         </ul>
+      </div>
+      <div
+        class="text-center w-1/2 mx-auto md:m-0 md:w-full md:text-end px-2 block lg:hidden"
+      >
+        <select
+          @change="handleNavigation"
+          class="p-2 border rounded w-full md:w-auto bg-yellow-300"
+        >
+          <option value="" disabled selected>Select a category</option>
+          <option value="/greenRoofs">GREEN ROOFS</option>
+          <option value="/turfdiagnostic">SYNTHETIC TURF-GMAX</option>
+          <option value="/golfcourse">GOLF COURSES</option>
+          <option value="/sportsturf">SPORTS TURF</option>
+          <option value="/landscapetesting">LANDSCAPE/SPECIALITY SOILS</option>
+        </select>
       </div>
     </div>
   </main>

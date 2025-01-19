@@ -3,10 +3,10 @@ import globePlant from "./../assets/Home images/globePlant.jpg";
 </script>
 <template>
   <main>
-    <div class="px-24 my-10 text-sm">
-      <p class="text-6xl my-5">A few words about us</p>
-      <div class="flex gap-x-10">
-        <div class="w-3/4">
+    <div class="px-5 md:px-24 lg:px-24 my-10 text-sm">
+      <p class="text-3xl md:text-4xl lg:text-5xl my-5">A few words about us</p>
+      <div class="flex flex-col md:flex-row lg:flex-row gap-x-10">
+        <div class="md:w-3/4 lg:w-3/4">
           <p class="text-red-700 my-5">
             At the start of 2015, the two leading physical testing labs serving
             the landscape, golf and sports turf industries joined together to
@@ -44,7 +44,7 @@ import globePlant from "./../assets/Home images/globePlant.jpg";
             We also perform Gmax testing for synthetic turf surfaces, and we
             provide product development testing for materials suppliers.
           </p>
-          <p class="text-3xl my-5">
+          <p class="text-2xl md:text-3xl lg:text-3xl my-5">
             We are proud members and supporters of the following organizations
           </p>
           <ul class="flex flex-col gap-y-5">
@@ -111,7 +111,7 @@ import globePlant from "./../assets/Home images/globePlant.jpg";
           </ul>
         </div>
         <!--  -->
-        <div class="w-1/4">
+        <div class="md:w-1/4 lg:w-1/4">
           <img :src="globePlant" class="mx-auto" />
           <p class="text-3xl text-center">Green Initiative</p>
           <p class="text-red-700 my-5">

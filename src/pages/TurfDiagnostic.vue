@@ -4,13 +4,15 @@ import turfImage from "./../assets/Home images/turfImage.jpg";
 </script>
 
 <template>
-  <main class="px-24 mt-16">
-    <div class="text-4xl text-center">Synthetic Turf Testing - Gmax</div>
-    <div class="flex">
-      <div class="w-1/2 flex justify-center items-center">
+  <main class="px-5 md:px-24 lg:px-24 mt-16">
+    <div class="text-3xl md:text-4xl lg:text-5x text-center">
+      Synthetic Turf Testing - Gmax
+    </div>
+    <div class="flex flex-col md:flex-row lg:flex-row gap-5">
+      <div class="md:w-1/2 lg:w-1/2 flex justify-center items-center">
         <img :src="turfLogo" width="300" />
       </div>
-      <div class="w-1/2 text-sm">
+      <div class="md:w-1/2 lg:w-1/2 text-sm">
         <p class="my-5">
           <span class="text-red-400"
             >Turf Diagnostics is an industry leading synthetic turf evaluation
@@ -40,7 +42,9 @@ import turfImage from "./../assets/Home images/turfImage.jpg";
         </p>
       </div>
     </div>
-    <div class="flex justify-around text-sm">
+    <div
+      class="flex flex-col gap-5 md:flex-row lg:flex-row justify-around text-sm"
+    >
       <div>
         <p class="text-red-400">Our synthetic turf evaluations include:</p>
         <p>a. Gmax values (field hardness)</p>

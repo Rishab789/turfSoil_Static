@@ -1,11 +1,22 @@
 <script setup lang="ts">
-import Carousel from "../components/Carousel.vue";
+import { images } from "../services/homeImages";
+
+import Carousel from "../components/carousel/Carousel.vue";
 </script>
 
 <template>
-  <main class="px-32 my-16 text-sm">
-    <div class="text-4xl text-center">Sports Turf Testing</div>
-    <Carousel />
+  <main class="px-5 md:px-24 lg:px-24 my-16 text-sm">
+    <div class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
+      Sports Turf Testing
+    </div>
+    <div class="flex justify-center">
+      <carousel
+        :slides="images"
+        :interval="5000"
+        controls
+        indicators
+      ></carousel>
+    </div>
     <p class="my-5">
       <span>Turf & Soil Diagnostics - our name says it all.</span> We are the
       leading sports turf physical testing company, with unrivaled knowledge,

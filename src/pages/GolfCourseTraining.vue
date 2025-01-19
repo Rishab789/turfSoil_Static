@@ -1,15 +1,22 @@
 <script setup lang="ts">
-import Carousel from "../components/Carousel.vue";
+import { images } from "../services/homeImages";
+
+import Carousel from "../components/carousel/Carousel.vue";
 import image from "../assets/Home images/golfCourse.jpg";
 </script>
 
 <template>
-  <main class="px-32 my-16">
-    <div class="text-4xl text-center">
+  <main class="px-5 md:px-24 lg:px-24 my-16">
+    <div class="text-lg sm:text-3xl md:text-4xl lg:text-5xl text-center">
       Golf Course Construction & Maintenance Testing
     </div>
-    <div>
-      <Carousel></Carousel>
+    <div class="flex justify-center">
+      <carousel
+        :slides="images"
+        :interval="5000"
+        controls
+        indicators
+      ></carousel>
     </div>
     <p class="my-5">
       Turf & Soil Diagnostics' laboratories are on the United States Golf
@@ -19,8 +26,8 @@ import image from "../assets/Home images/golfCourse.jpg";
         Accreditation (A2LA).</a
       >
     </p>
-    <div class="flex text-sm">
-      <div class="w-2/3">
+    <div class="flex flex-col md:flex-row lg:flex-row text-sm">
+      <div class="md:w-2/3 lg:w-2/3">
         <p class="text-red-400 my-5">
           Customer focused testing for superintendents, architects, builders,
           and suppliers to the golf industry.
@@ -54,8 +61,8 @@ import image from "../assets/Home images/golfCourse.jpg";
           practices.
         </p>
       </div>
-      <div class="w-1/2 flex flex-col justify-center items-center">
-        <img :src="image" class="my-5" />
+      <div class="md:w-1/2 lg:w-1/2flex flex-col justify-center items-center">
+        <img :src="image" class="my-5 m-auto md:m-0 lg:m-0" />
         <p class="my-5">
           The Turf & Soil Diagnostics' laboratories follow the test methods of
           the American Society of Agronomy (ASA), American Society for Testing &

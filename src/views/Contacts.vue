@@ -1,12 +1,31 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const handleNavigation = (event: Event) => {
+  const selectedPath = (event.target as HTMLSelectElement).value;
+  if (selectedPath) {
+    router.push(selectedPath);
+  }
+};
 </script>
 <template>
   <main>
-    <div class="w-full flex px-24 pt-20">
+    <div
+      class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-5 text-center lg:text-end lg:pr-32 py-5"
+    >
+      Staff / Contacts
+    </div>
+
+    <div
+      class="w-full flex flex-col md:flex-row lg:flex-row gap-2 px-5 md:px-24 lg:px-24"
+    >
       <!-- contact information  -->
-      <div class="w-1/2 px-10 mt-16">
-        <p class="text-4xl my-2">Contact information:</p>
+      <div class="md:w-1/2 lg:w-1/2 lg:px-10 mt-16">
+        <p class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl my-2">
+          Contact information:
+        </p>
         <div class="my-5">
           <p>Telephone: +1 855-769-4231</p>
           <p>E-mail: <a href="#">lab@turfdiag.com</a></p>
@@ -32,7 +51,9 @@ import { RouterLink } from "vue-router";
         </div>
 
         <div class="">
-          <p class="text-4xl my-5">Contact form:</p>
+          <p class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl my-5">
+            Contact form:
+          </p>
           <form class="flex flex-col gap-y-5">
             <div>
               <input
@@ -64,8 +85,7 @@ import { RouterLink } from "vue-router";
         </div>
       </div>
       <!-- staff contacts  -->
-      <div class="w-1/2 staff-content">
-        <div class="text-6xl my-5">Staff / Contacts</div>
+      <div class="md:w-1/2 lg:w-1/2 staff-content">
         <div class="my-5">
           <span class="">Duane Otto - President </span>
           <p>
@@ -154,7 +174,7 @@ import { RouterLink } from "vue-router";
         </p>
       </div>
     </div>
-    <div class="flex justify-center my-10">
+    <div class="lg:flex justify-center my-10 hidden">
       <ul class="flex gap-x-8 list-menu">
         <RouterLink to="/greenRoofs"><li>GREEN ROOFS</li></RouterLink>
 
@@ -169,6 +189,21 @@ import { RouterLink } from "vue-router";
           ><li>LANDSCAPE/SPECIALITY SOILS</li></RouterLink
         >
       </ul>
+    </div>
+    <div
+      class="text-center w-1/2 mx-auto md:m-0 md:w-full md:text-end px-2 block lg:hidden"
+    >
+      <select
+        @change="handleNavigation"
+        class="p-2 border rounded w-full md:w-auto bg-yellow-300"
+      >
+        <option value="" disabled selected>Select a category</option>
+        <option value="/greenRoofs">GREEN ROOFS</option>
+        <option value="/turfdiagnostic">SYNTHETIC TURF-GMAX</option>
+        <option value="/golfcourse">GOLF COURSES</option>
+        <option value="/sportsturf">SPORTS TURF</option>
+        <option value="/landscapetesting">LANDSCAPE/SPECIALITY SOILS</option>
+      </select>
     </div>
   </main>
 </template>
