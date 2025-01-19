@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { images } from "../services/homeImages";
 
 import Carousel from "../components/carousel/Carousel.vue";
