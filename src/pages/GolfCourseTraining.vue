@@ -1,8 +1,8 @@
 <script setup>
-import { images } from "../services/homeImages";
+import { golfCourseImages } from "../services/homeImages";
 
 import Carousel from "../components/carousel/Carousel.vue";
-import image from "../assets/Home images/golfCourse.jpg";
+import image from "../assets/HomeImages/golfCourse.jpg";
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import image from "../assets/Home images/golfCourse.jpg";
     </div>
     <div class="flex justify-center">
       <carousel
-        :slides="images"
+        :slides="golfCourseImages"
         :interval="5000"
         controls
         indicators

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import leaf from "./../assets/Home images/tea-leaves.png";
-import box from "./../assets/Home images/Box.jpg";
+import leaf from "./../assets/HomeImages/tea-leaves.png";
+import box from "./../assets/HomeImages/Box.jpg";
 </script>
 <template>
   <main class="px-5 md:px-24 lg:px-24">
@@ -11,7 +11,10 @@ import box from "./../assets/Home images/Box.jpg";
       </p>
       <p class="flex items-center justify-center my-5">
         <img :src="leaf" width="40" />
-        <a href="#" class="underline text-lg md:text-xl lg:text-xl">
+        <a
+          href="https://turfdiag.com/mt-content/uploads/2022/11/tsd-sample-submittal-form.pdf"
+          class="underline text-lg md:text-xl lg:text-xl"
+        >
           Click Here for quick access to TSD Sample Submittal Form</a
         >
       </p>
@@ -58,7 +61,9 @@ import box from "./../assets/Home images/Box.jpg";
             shipment
           </p>
         </div>
-        <a href="#" class="text-xl underline"
+        <a
+          href="https://www.turfdiag.com/mt-content/uploads/2020/08/sampling_agb-march2010_.pdf"
+          class="text-xl underline"
           >Click here for Sampling Instructions</a
         >
       </div>
@@ -78,7 +83,12 @@ import box from "./../assets/Home images/Box.jpg";
       </p>
       <p class="flex items-center justify-center">
         <img :src="leaf" width="40" />
-        <a href="#" class="text-xl underline my-5"> Sample Submittal Form</a>
+        <a
+          href="https://turfdiag.com/mt-content/uploads/2022/11/tsd-sample-submittal-form.pdf"
+          class="text-xl underline my-5"
+        >
+          Sample Submittal Form</a
+        >
       </p>
       <p>
         The submittal form tells the lab who the client is and what testing to
@@ -134,7 +144,12 @@ import box from "./../assets/Home images/Box.jpg";
       <div class="">
         <p class="flex items-center">
           <img :src="leaf" width="40" />
-          <a href="#" class="underline"> TSD-KS Soil Import Label</a>
+          <a
+            href="https://turfdiag.com/mt-content/uploads/2022/12/tsd-ks-soil-permit-label-12-15-22-to-12-15-25.pdf"
+            class="underline"
+          >
+            TSD-KS Soil Import Label</a
+          >
         </p>
         <p class="text-red-600">
           Turf & Soil Diagnostics - KS holds USDA Permit #525-22-349-2183
@@ -144,7 +159,12 @@ import box from "./../assets/Home images/Box.jpg";
       <div>
         <p class="flex items-center">
           <img :src="leaf" width="40" />
-          <a href="#" class="underline"> TSD-NY Soil Import Label</a>
+          <a
+            href="https://turfdiag.com/mt-content/uploads/2024/08/soil-permit-label-ny-2024-2027_66cf29c937d26.pdf"
+            class="underline"
+          >
+            TSD-NY Soil Import Label</a
+          >
         </p>
         <p class="text-red-600">
           Turf & Soil Diagnostics - NY holds USDA Permit #525-24-110-64996.

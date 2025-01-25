@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import turfLogo from "./../assets/Home images/Turf.png";
-import turfImage from "./../assets/Home images/turfImage.jpg";
+import turfLogo from "./../assets/HomeImages/Turf.png";
+import turfImage from "./../assets/HomeImages/turfImage.jpg";
 </script>
 
 <template>

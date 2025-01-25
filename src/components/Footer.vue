@@ -1,8 +1,10 @@
-<script></script>
+<script setup>
+import grass from "./../assets/HomeImages/grassFooter.png";
+</script>
 <template>
-  <footer>
+  <footer class="">
     <div
-      class="flex flex-col md:flex-col lg:flex-row lg:items-center bg-green-200 justify-around h-[200px] text-sm md:text-xl lg:text-xl px-5 md:px-5 lg:px-0"
+      class="flex flex-col md:flex-col lg:flex-row lg:items-center justify-around h-[200px] text-sm md:text-xl lg:text-xl px-5 md:px-5 lg:px-0"
     >
       <div>
         <p>Turf & Soil Diagnostics - KS</p>
@@ -21,3 +23,9 @@
     </div>
   </footer>
 </template>
+
+<style>
+.main {
+  background-image: url("../assets/HomeImages/grassFooter.png");
+}
+</style>

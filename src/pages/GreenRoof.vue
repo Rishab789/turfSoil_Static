@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import roof from "../assets/Home images/roof.jpg";
-import roofperson from "../assets/Home images/roofperson.jpg";
-import media from "../assets/Home images/media-loading2.jpg";
+import roof from "../assets/HomeImages/roof.jpg";
+import roofperson from "../assets/HomeImages/roofperson.jpg";
+import media from "../assets/HomeImages/media-loading2.jpg";
 </script>
 
 <template>

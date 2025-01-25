@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import globePlant from "./../assets/Home images/globePlant.jpg";
+import globePlant from "./../assets/HomeImages/globePlant.jpg";
 </script>
 <template>
   <main>
@@ -48,61 +48,61 @@ import globePlant from "./../assets/Home images/globePlant.jpg";
             We are proud members and supporters of the following organizations
           </p>
           <ul class="flex flex-col gap-y-5">
-            <a href="#">
+            <a href="https://www.gcbaa.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Golf Course Builders Association of America</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://greenroofs.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Green Roofs for Healthy Cities</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://www.sportsfieldmanagement.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Sports Field Management Association</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://texasturf.com/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Texas Turfgrass Association</p>
               </li>
             </a>
-            <a href="#">
+            <a href="http://www.hagcsa.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Heart of America Golf Course Superintendents Association</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://www.kgcsa.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Kansas Golf Course Superintdents Association</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://gcsaofny.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Golf Course Superintendents Association of New York</p>
               </li>
             </a>
-            <a href="#">
+            <a href="http://www.mokanstma.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>MoKan Sports Turf Managers Association</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://www.nysta.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>New York State Turfgrass Association</p>
               </li>
             </a>
-            <a href="#">
+            <a href="https://www.syntheticturfcouncil.org/">
               <li>
                 <i class="fa-solid fa-check"></i>
                 <p>Synthetic Turf Council</p>

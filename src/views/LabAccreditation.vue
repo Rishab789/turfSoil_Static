@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import pdf1 from "../assets/Home images/tsd-ks-accreditation-2024-25_page_1.jpg";
-import pdf2 from "../assets/Home images/tsd-ks-accreditation-2024-25_page_2.jpg";
-import pdf3 from "../assets/Home images/tsd-ny-accreditation-2024-25_page_1_page_1.jpg";
+import pdf1 from "../assets/HomeImages/tsd-ks-accreditation-2024-25_page_1.jpg";
+import pdf2 from "../assets/HomeImages/tsd-ks-accreditation-2024-25_page_2.jpg";
+import pdf3 from "../assets/HomeImages/tsd-ny-accreditation-2024-25_page_1_page_1.jpg";
 </script>
 <template>
   <main class="px-5 md:px-24 lg:px-24 bg-green-200 my-10">

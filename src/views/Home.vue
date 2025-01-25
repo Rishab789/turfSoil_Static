@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from "vue-router";
+
 import { images } from "../services/homeImages";
 import { gridImages } from "../services/homeImages";
 import Carousel from "./../components/carousel/Carousel.vue";
@@ -29,7 +31,9 @@ import Carousel from "./../components/carousel/Carousel.vue";
           class="flex flex-col justify-center items-center bg-[#dddddd] w-60 md:w-2/3 lg:w-2/3 h-48 m-auto"
         >
           <img :src="item.image" class="w-2/3 h-32" />
-          <a href="#" class="underline text-green-700">{{ item.text }}</a>
+          <RouterLink :to="item.path" class="underline text-green-700">{{
+            item.text
+          }}</RouterLink>
         </div>
       </div>
     </div>
@@ -57,7 +61,11 @@ import Carousel from "./../components/carousel/Carousel.vue";
         hazardous materials. Our labs only work with clean soils, sands,
         amendments, etc.
       </p>
-      <a href="#">click here to learn more about our company</a>
+      <div class="text-center text-xl text-red-500 underline">
+        <RouterLink to="/about"
+          >click here to learn more about our company</RouterLink
+        >
+      </div>
     </div>
   </div>
 </template>

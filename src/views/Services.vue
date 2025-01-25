@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import image from "./../assets/Home images/service-image.jpg";
+import image from "./../assets/HomeImages/service-image.jpg";
 import { RouterLink } from "vue-router";
 </script>
 <template>
@@ -16,7 +16,7 @@ import { RouterLink } from "vue-router";
             Click on a link below to learn more
           </p>
           <ul class="flex flex-col gap-y-5">
-            <RouterLink to="/">
+            <RouterLink to="/turfdiagnostic">
               <li>
                 <i class="fa-solid fa-check"></i
                 ><a href="#">Gmax - Synthetic Turf Testing</a>
@@ -37,7 +37,7 @@ import { RouterLink } from "vue-router";
                 material, and other green roof components.
               </p>
             </RouterLink>
-            <RouterLink to="/">
+            <RouterLink to="/golfcourse">
               <li>
                 <i class="fa-solid fa-check"></i
                 ><a href="#">Golf Course Testing</a>
@@ -47,7 +47,7 @@ import { RouterLink } from "vue-router";
                 evaluations, drainage and compaction testing,and more.
               </p>
             </RouterLink>
-            <RouterLink to="/">
+            <RouterLink to="/sportsturf">
               <li>
                 <i class="fa-solid fa-check"></i
                 ><a href="#">Sports Turf Testing</a>
@@ -57,7 +57,7 @@ import { RouterLink } from "vue-router";
                 natural and synthetic turf fields.
               </p>
             </RouterLink>
-            <RouterLink to="/">
+            <RouterLink to="/landscapetesting">
               <li>
                 <i class="fa-solid fa-check"></i
                 ><a href="#">Landscape Testing</a>

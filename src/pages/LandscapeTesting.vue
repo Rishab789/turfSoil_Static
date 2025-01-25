@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import image1 from "./../assets/Home images/landscape.jpg";
-import image2 from "./../assets/Home images/hand_holding_a_seedling_and.jpg";
+import image1 from "./../assets/HomeImages/landscape.jpg";
+import image2 from "./../assets/HomeImages/hand_holding_a_seedling_and.jpg";
 </script>
 
 <template>

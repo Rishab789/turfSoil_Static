@@ -1,12 +1,24 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
-import { useRouter } from "vue-router";
+import BottomMenu from "../components/BottomMenu.vue";
 
-const router = useRouter();
-const handleNavigation = (event: Event) => {
-  const selectedPath = (event.target as HTMLSelectElement).value;
-  if (selectedPath) {
-    router.push(selectedPath);
+import { ref } from "vue";
+import axios from "axios";
+
+const formData = ref({
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
+});
+
+const sendForm = async () => {
+  try {
+    await axios.post("http://localhost:3000/send-email", formData.value);
+    // toaster message to be added  Email sent successfully!;
+    formData.value = { name: "", email: "", phone: "", message: "" };
+  } catch (error) {
+    // toast message  Failed to send email.
+    console.error("Error sending email:", error);
   }
 };
 </script>
@@ -28,7 +40,10 @@ const handleNavigation = (event: Event) => {
         </p>
         <div class="my-5">
           <p>Telephone: +1 855-769-4231</p>
-          <p>E-mail: <a href="#">lab@turfdiag.com</a></p>
+          <p>
+            E-mail:
+            <a href="lab@turfdiag.com" class="underline">lab@turfdiag.com</a>
+          </p>
         </div>
         <p class="my-5">
           Turf & Soil Diagnostics has branches located in Linwood, KS and
@@ -54,32 +69,43 @@ const handleNavigation = (event: Event) => {
           <p class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl my-5">
             Contact form:
           </p>
-          <form class="flex flex-col gap-y-5">
+          <form class="flex flex-col gap-y-5" @submit.prevent="sendForm">
             <div>
               <input
+                v-model="formData.name"
                 type="text"
                 placeholder="Name*"
+                required
                 class="border border-black w-full h-10 px-2"
               />
             </div>
             <div>
               <input
+              v-model="formData.email"
+              required
                 type="email"
                 placeholder="Email*"
                 class="border border-black w-full h-10 px-2"
               />
             </div>
             <div>
-              <input type="text" class="border border-black w-full h-10 px-2" />
+              <input
+              v-model="formData.phone"
+                type="text"
+                placeholder="Phone"
+                class="border border-black w-full h-10 px-2"
+              />
             </div>
             <div>
               <textarea
+              v-model="formData.message"
+              required
                 placeholder="Message*"
-                class="border border-black w-full h-32"
+                class="border border-black w-full h-32 px-2"
               ></textarea>
             </div>
             <div class="flex justify-end">
-              <button class="border border-black px-6 py-2">Send</button>
+              <button class="border border-black px-6 py-2" type="submit">Send</button>
             </div>
           </form>
         </div>
@@ -174,37 +200,8 @@ const handleNavigation = (event: Event) => {
         </p>
       </div>
     </div>
-    <div class="lg:flex justify-center my-10 hidden">
-      <ul class="flex gap-x-8 list-menu">
-        <RouterLink to="/greenRoofs"><li>GREEN ROOFS</li></RouterLink>
 
-        <RouterLink to="/turfdiagnostic"
-          ><li>SYNTHETIC TURF-GMAX</li></RouterLink
-        >
-
-        <RouterLink to="/golfcourse"><li>GOLF COURSES</li></RouterLink>
-        <RouterLink to="/sportsturf"><li>SPORTS TURF</li></RouterLink>
-
-        <RouterLink to="/landscapetesting"
-          ><li>LANDSCAPE/SPECIALITY SOILS</li></RouterLink
-        >
-      </ul>
-    </div>
-    <div
-      class="text-center w-1/2 mx-auto md:m-0 md:w-full md:text-end px-2 block lg:hidden"
-    >
-      <select
-        @change="handleNavigation"
-        class="p-2 border rounded w-full md:w-auto bg-yellow-300"
-      >
-        <option value="" disabled selected>Select a category</option>
-        <option value="/greenRoofs">GREEN ROOFS</option>
-        <option value="/turfdiagnostic">SYNTHETIC TURF-GMAX</option>
-        <option value="/golfcourse">GOLF COURSES</option>
-        <option value="/sportsturf">SPORTS TURF</option>
-        <option value="/landscapetesting">LANDSCAPE/SPECIALITY SOILS</option>
-      </select>
-    </div>
+    <BottomMenu></BottomMenu>
   </main>
 </template>
 

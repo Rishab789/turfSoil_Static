@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
-import testBottles from "./../assets/Home images/testBottles.jpg";
-import bunkerSeeds from "./../assets/Home images/BunkerSeeds.jpg";
+import testBottles from "./../assets/HomeImages/testBottles.jpg";
+import bunkerSeeds from "./../assets/HomeImages/BunkerSeeds.jpg";
 
 import { useRouter } from "vue-router";
 

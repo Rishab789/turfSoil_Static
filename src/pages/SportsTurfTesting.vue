@@ -1,5 +1,5 @@
 <script setup>
-import { images } from "../services/homeImages";
+import { sportsTurfImages } from "../services/homeImages";
 
 import Carousel from "../components/carousel/Carousel.vue";
 </script>
@@ -11,7 +11,7 @@ import Carousel from "../components/carousel/Carousel.vue";
     </div>
     <div class="flex justify-center">
       <carousel
-        :slides="images"
+        :slides="sportsTurfImages"
         :interval="5000"
         controls
         indicators

@@ -14,6 +14,14 @@ import SportsTurfTesting from "./pages/SportsTurfTesting.vue";
 import TurfDiagnostic from "./pages/TurfDiagnostic.vue";
 import NotFound from "./pages/NotFound.vue";
 import SoilTestDescription from "./pages/SoilTestDescription.vue";
+import ViewInsideTheGreen from "./pages/ViewInsideTheGreen.vue";
+import UnderstandingGmaxReports1 from "./pages/UnderstandingGmaxReports1.vue";
+import DirtyThoughts from "./pages/DirtyThoughts.vue";
+import SamplePack from "./pages/SamplePack.vue";
+import NutrientTesting from "./pages/NutrientTesting.vue";
+import CoreAeration from "./pages/CoreAeration.vue";
+import UnderstandingGmaxReports2 from "./pages/UnderstandingGmaxReports2.vue";
+import UnderstandingGmaxReports3 from "./pages/UnderstandingGmaxReports3.vue";
 
 const routes = [
   { name: "Home", path: "/", component: Home },
@@ -45,6 +53,46 @@ const routes = [
     path: "/soiltestdescription",
     component: SoilTestDescription,
     meta: { noHeaderFooter: true },
+  },
+  {
+    name: "ViewInsideTheGreen",
+    path: "/a-view-inside-the-green",
+    component: ViewInsideTheGreen,
+  },
+  {
+    name: "UnderstandingGmaxReports1",
+    path: "/understanding-gmax-reports",
+    component: UnderstandingGmaxReports1,
+  },
+  {
+    name: "UnderstandingGmaxReports2",
+    path: "/understanding-gmax-reports2",
+    component: UnderstandingGmaxReports2,
+  },
+  {
+    name: "UnderstandingGmaxReports3",
+    path: "/understanding-gmax-reports3",
+    component: UnderstandingGmaxReports3,
+  },
+  {
+    name: "DirtyThoughts",
+    path: "/dirty-thoughts",
+    component: DirtyThoughts,
+  },
+  {
+    name: "SamplePack",
+    path: "/sample_pack",
+    component: SamplePack,
+  },
+  {
+    name: "NutrientTesting",
+    path: "/nutrient-testing",
+    component: NutrientTesting,
+  },
+  {
+    name: "CoreAeration",
+    path: "/core-aeration",
+    component: CoreAeration,
   },
   { name: "NotFound", path: "/:pathMatch(.*)*", component: NotFound },
 ];
