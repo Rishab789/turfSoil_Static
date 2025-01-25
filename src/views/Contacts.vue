@@ -4,6 +4,9 @@ import BottomMenu from "../components/BottomMenu.vue";
 import { ref } from "vue";
 import axios from "axios";
 
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
+
 const formData = ref({
   name: "",
   email: "",
@@ -15,9 +18,15 @@ const sendForm = async () => {
   try {
     await axios.post("http://localhost:3000/send-email", formData.value);
     // toaster message to be added  Email sent successfully!;
+    toast.success("Email sent successfully!", {
+      autoClose: 1000,
+    }); // ToastOptions
     formData.value = { name: "", email: "", phone: "", message: "" };
   } catch (error) {
     // toast message  Failed to send email.
+    toast.error(error, {
+      autoClose: 1000,
+    }); // ToastOptions
     console.error("Error sending email:", error);
   }
 };
@@ -81,8 +90,8 @@ const sendForm = async () => {
             </div>
             <div>
               <input
-              v-model="formData.email"
-              required
+                v-model="formData.email"
+                required
                 type="email"
                 placeholder="Email*"
                 class="border border-black w-full h-10 px-2"
@@ -90,7 +99,7 @@ const sendForm = async () => {
             </div>
             <div>
               <input
-              v-model="formData.phone"
+                v-model="formData.phone"
                 type="text"
                 placeholder="Phone"
                 class="border border-black w-full h-10 px-2"
@@ -98,14 +107,16 @@ const sendForm = async () => {
             </div>
             <div>
               <textarea
-              v-model="formData.message"
-              required
+                v-model="formData.message"
+                required
                 placeholder="Message*"
                 class="border border-black w-full h-32 px-2"
               ></textarea>
             </div>
             <div class="flex justify-end">
-              <button class="border border-black px-6 py-2" type="submit">Send</button>
+              <button class="border border-black px-6 py-2" type="submit">
+                Send
+              </button>
             </div>
           </form>
         </div>
