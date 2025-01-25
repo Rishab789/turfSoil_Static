@@ -5,9 +5,7 @@ import { RouterLink } from "vue-router";
 <template>
   <main>
     <div class="px-5 md:px-24 lg:px-24">
-      <div class="text-3xl md:text-4xl lg:text-5xl text-center my-5">
-        Services
-      </div>
+      <div class="text-3xl md:text-4xl lg:text-5xl text-center">Services</div>
       <div
         class="flex flex-col md:flex-row lg:flex-row justify-between w-full my-10"
       >

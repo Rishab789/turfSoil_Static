@@ -11,7 +11,7 @@ const route = useRoute();
   <div class="">
     <Header v-if="!route.meta.noHeaderFooter" />
   </div>
-  <main class="bg-green-100">
+  <main class="bg-green-100 py-10">
     <RouterView />
   </main>
   <Footer v-if="!route.meta.noHeaderFooter" />

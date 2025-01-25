@@ -6,9 +6,9 @@ import labMan from "./../assets/HomeImages/labMan.jpg";
 import { RouterLink } from "vue-router";
 </script>
 <template>
-  <main class="px-5 md:px-24 lg:px-24 my-5">
+  <main class="px-5 md:px-24 lg:px-24">
     <div>
-      <p class="text-3xl md:text-4xl lg:text-5xl text-center my-5">
+      <p class="text-3xl md:text-4xl lg:text-5xl text-center">
         Useful Documents and Articles Library
       </p>
       <p class="text-xl text-red-700 text-center">
@@ -29,10 +29,13 @@ import { RouterLink } from "vue-router";
             also applicable to other types of landscape soils.
           </p>
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2023/02/usga-greens-resource-guide-tsd.pdf"
             >USGA Recommendations for Greens
           </a>
           <a
+            target="_blank
+          "
             href="https://turfdiag.com/mt-content/uploads/2023/02/tsd-bunker-testing-2020.pdf"
             >Guidelines for Evaluating Bunker Sand
           </a>
@@ -40,14 +43,17 @@ import { RouterLink } from "vue-router";
             >Diagnostic Profile Cores
           </RouterLink>
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2020/08/52a7626a55e44.jpg"
             >Putting Green Sand Guide
           </a>
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2023/02/astm-f2396-guide-for-sports-field-construction.pdf"
             >ASTM Guide for Sand-Based Athletic Fields
           </a>
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2020/08/sampling_agb-march2010_.pdf"
             >Helpful Sampling Information
           </a>
@@ -67,6 +73,7 @@ import { RouterLink } from "vue-router";
           <img :src="plant" />
           <p class="text-xl">Green Roof</p>
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2020/08/52b1c14ca5d86.pdf"
             >Growing Media - Size Matters</a
           >
@@ -81,6 +88,7 @@ import { RouterLink } from "vue-router";
             Sampling Information
           </p>
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2023/02/tsd-brochure.pdf"
             >Turf & Soil Diagnostics Brochure
           </a>
@@ -88,6 +96,7 @@ import { RouterLink } from "vue-router";
             >Soil Test Descriptions</RouterLink
           >
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2020/08/whytest-agbjan2010p68-70.pdf"
             >Why Test?????</a
           >

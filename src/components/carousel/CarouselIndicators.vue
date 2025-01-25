@@ -40,4 +40,43 @@ export default {
 .active {
   opacity: 1;
 }
+
+@media (max-width: 837px) {
+  .carousel-indicators {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 8em;
+    z-index: 2;
+  }
+
+  .carousel-indicator-item {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: green;
+    margin: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  @media (max-width: 263px) {
+    .carousel-indicators {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 10em;
+      z-index: 2;
+    }
+    .carousel-indicator-item {
+      width: 5px;
+      height: 5px;
+      border: none;
+      background: green;
+      margin: 0.2em;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
 </style>

@@ -2,7 +2,7 @@
 import grass from "./../assets/HomeImages/grassFooter.png";
 </script>
 <template>
-  <footer class="">
+  <footer class="bg-[#e4ecdc]">
     <div
       class="flex flex-col md:flex-col lg:flex-row lg:items-center justify-around h-[200px] text-sm md:text-xl lg:text-xl px-5 md:px-5 lg:px-0"
     >

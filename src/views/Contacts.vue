@@ -34,7 +34,7 @@ const sendForm = async () => {
 <template>
   <main>
     <div
-      class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-5 text-center lg:text-end lg:pr-32 py-5"
+      class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center lg:text-end lg:pr-32 py-5"
     >
       Staff / Contacts
     </div>

@@ -4,9 +4,9 @@ import pdf2 from "../assets/HomeImages/tsd-ks-accreditation-2024-25_page_2.jpg";
 import pdf3 from "../assets/HomeImages/tsd-ny-accreditation-2024-25_page_1_page_1.jpg";
 </script>
 <template>
-  <main class="px-5 md:px-24 lg:px-24 bg-green-200 my-10">
+  <main class="px-5 md:px-24 lg:px-24 bg-green-100">
     <div class="">
-      <p class="text-2xl md:text-4xl lg:text-5xl text-center my-5">
+      <p class="text-2xl md:text-4xl lg:text-5xl text-center">
         TSD Scopes of Accreditation
       </p>
       <p class="text-sm text-center my-5">

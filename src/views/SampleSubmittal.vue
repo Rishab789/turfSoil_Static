@@ -5,13 +5,14 @@ import box from "./../assets/HomeImages/Box.jpg";
 <template>
   <main class="px-5 md:px-24 lg:px-24">
     <div>
-      <p class="text-2xl md:text-4xl lg:text-5xl text-center my-5">
+      <p class="text-2xl md:text-4xl lg:text-5xl text-center">
         Sending in samples to <br />
         ​​​​​​​Turf & Soil Diagnostics?
       </p>
       <p class="flex items-center justify-center my-5">
         <img :src="leaf" width="40" />
         <a
+          target="_blank"
           href="https://turfdiag.com/mt-content/uploads/2022/11/tsd-sample-submittal-form.pdf"
           class="underline text-lg md:text-xl lg:text-xl"
         >
@@ -84,6 +85,7 @@ import box from "./../assets/HomeImages/Box.jpg";
       <p class="flex items-center justify-center">
         <img :src="leaf" width="40" />
         <a
+          target="_blank"
           href="https://turfdiag.com/mt-content/uploads/2022/11/tsd-sample-submittal-form.pdf"
           class="text-xl underline my-5"
         >
@@ -145,6 +147,7 @@ import box from "./../assets/HomeImages/Box.jpg";
         <p class="flex items-center">
           <img :src="leaf" width="40" />
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2022/12/tsd-ks-soil-permit-label-12-15-22-to-12-15-25.pdf"
             class="underline"
           >
@@ -160,6 +163,7 @@ import box from "./../assets/HomeImages/Box.jpg";
         <p class="flex items-center">
           <img :src="leaf" width="40" />
           <a
+            target="_blank"
             href="https://turfdiag.com/mt-content/uploads/2024/08/soil-permit-label-ny-2024-2027_66cf29c937d26.pdf"
             class="underline"
           >

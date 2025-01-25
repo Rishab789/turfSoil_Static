@@ -7,7 +7,7 @@ import Carousel from "./../components/carousel/Carousel.vue";
 </script>
 <template>
   <div class="px-5 md:px-24 lg:px-24">
-    <p class="text-2xl md:text-3xl lg:text-3xl text-center my-5 lg:my-10">
+    <p class="text-2xl md:text-3xl lg:text-3xl text-center">
       Testing Services for Golf Courses, Sports Fields, Public and Commercial
       Landscapes
     </p>
@@ -28,12 +28,14 @@ import Carousel from "./../components/carousel/Carousel.vue";
       >
         <div
           v-for="item in gridImages"
-          class="flex flex-col justify-center items-center bg-[#dddddd] w-60 md:w-2/3 lg:w-2/3 h-48 m-auto"
+          class="flex flex-col justify-center items-center bg-[#dddddd] w-full md:w-2/3 lg:w-2/3 h-48 m-auto"
         >
           <img :src="item.image" class="w-2/3 h-32" />
-          <RouterLink :to="item.path" class="underline text-green-700">{{
-            item.text
-          }}</RouterLink>
+          <RouterLink
+            :to="item.path"
+            class="underline text-green-700 text-center"
+            >{{ item.text }}</RouterLink
+          >
         </div>
       </div>
     </div>

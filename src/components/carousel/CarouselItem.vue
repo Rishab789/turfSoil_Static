@@ -7,7 +7,10 @@
       @mouseout="$emit('mouseout')"
     >
       <img :src="slide.image" />
-      <div v-html="slide.text" class="sm:text-lg md:text-xl lg:text-2xl"></div>
+      <div
+        v-html="slide.text"
+        class="sm:text-sm md:text-lg lg:text-xl bg-white px-1 py-1"
+      ></div>
     </div>
   </transition>
 </template>
