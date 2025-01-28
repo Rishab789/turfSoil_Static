@@ -31,7 +31,7 @@ const handleNavigation = (event: Event) => {
   >
     <select
       @change="handleNavigation"
-      class="p-2 border rounded w-full md:w-auto bg-yellow-300"
+      class="p-2 border rounded w-full md:w-auto bg-white"
     >
       <option value="" disabled selected>Select a category</option>
       <option value="/greenRoofs">GREEN ROOFS</option>
@@ -46,13 +46,15 @@ const handleNavigation = (event: Event) => {
 <style scoped>
 .list-menu li {
   cursor: pointer;
-  border: 1px solid black;
   padding: 1rem 1.5rem;
   border-radius: 0.2rem;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .list-menu li:hover {
-  background-color: burlywood;
-  color: white;
+  background-color: #e4ecdc;
+  transition-duration: 0.3s;
 }
 </style>

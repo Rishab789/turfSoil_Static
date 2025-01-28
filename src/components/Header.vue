@@ -8,7 +8,7 @@ const isMenuOpen = ref(false);
 
 <template>
   <header
-    class="relative mx-auto w-[100%] flex justify-center lg:items-center lg:justify-between container bg-green-100"
+    class="relative flex justify-center lg:items-center lg:justify-between container"
   >
     <div class="flex flex-col justify-center items-center">
       <RouterLink to="/">

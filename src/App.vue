@@ -8,7 +8,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="">
+  <div class="bg-green-100">
     <Header v-if="!route.meta.noHeaderFooter" />
   </div>
   <main class="bg-green-100 py-10">

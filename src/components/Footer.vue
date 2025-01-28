@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from "vue-router";
 import grass from "./../assets/HomeImages/grassFooter.png";
 </script>
 <template>
@@ -11,10 +12,14 @@ import grass from "./../assets/HomeImages/grassFooter.png";
         <p>613 E. 1st Street</p>
         <p>Linwood, KS 66052 USA</p>
       </div>
-      <!-- <div>
+      <div>
         <p>Phone: 1-855-769-4231</p>
-        <a href="#">copyright/privacy policy</a>
-      </div> -->
+        <RouterLink
+          to="/privacy-policy"
+          class="text-sm text-center underline text-red-500"
+          >copyright/privacy policy</RouterLink
+        >
+      </div>
       <div>
         <p>Turf & Soil Diagnostics - NY</p>
         <p>35 King Street</p>

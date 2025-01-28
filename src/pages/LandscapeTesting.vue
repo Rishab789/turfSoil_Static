@@ -5,7 +5,7 @@ import image2 from "./../assets/HomeImages/hand_holding_a_seedling_and.jpg";
 
 <template>
   <main class="px-5 md:px-24 lg:px-24 text-sm">
-    <div class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center my-5">
+    <div class="text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
       Landscape/ Specialty Soil Testing
     </div>
     <div class="flex flex-col md:flex-row lg:flex-row gap-x-10">

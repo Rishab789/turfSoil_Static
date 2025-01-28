@@ -22,12 +22,14 @@ import NutrientTesting from "./pages/NutrientTesting.vue";
 import CoreAeration from "./pages/CoreAeration.vue";
 import UnderstandingGmaxReports2 from "./pages/UnderstandingGmaxReports2.vue";
 import UnderstandingGmaxReports3 from "./pages/UnderstandingGmaxReports3.vue";
+import Policy from "./pages/Policy.vue";
 
 const routes = [
   { name: "Home", path: "/", component: Home },
   { name: "About", path: "/about", component: About },
   { name: "Articles", path: "/articles", component: Articles },
   { name: "Contacts", path: "/contacts", component: Contacts },
+  { name: "Policy", path: "/privacy-policy", component: Policy },
   {
     name: "LabAccreditation",
     path: "/labaccreditation",
