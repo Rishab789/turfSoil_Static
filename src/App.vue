@@ -8,10 +8,10 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="bg-green-100">
+  <div class="">
     <Header v-if="!route.meta.noHeaderFooter" />
   </div>
-  <main class="bg-green-100 py-10">
+  <main class="py-10">
     <RouterView />
   </main>
   <Footer v-if="!route.meta.noHeaderFooter" />

@@ -17,8 +17,8 @@ const isMenuOpen = ref(false);
           class="mx-auto w-16 md:w-24 lg:w-24 cursor-pointer"
         />
       </RouterLink>
-      <!-- <p class="text-center text-xl">Turf and Soil Diagnostics</p> -->
-      <img :src="logoText" class="w-2/3" />
+      <p class="text-center text-xl">Turf and Soil Diagnostics</p>
+      <!-- <img :src="logoText" class="w-2/3" /> -->
     </div>
     <nav class="hidden lg:block">
       <ul class="flex gap-5">
@@ -42,7 +42,7 @@ const isMenuOpen = ref(false);
     <div>
       <nav
         :class="{ block: isMenuOpen, hidden: !isMenuOpen }"
-        class="bg-amber-900 text-white absolute -bottom-72 left-7 z-10 w-[90%]"
+        class="bg-green-100 text-black absolute -bottom-72 left-7 z-10 w-[90%]"
       >
         <ul class="flex flex-col gap-5 px-10 border-2 border-black">
           <RouterLink to="/">Home</RouterLink>
@@ -68,14 +68,14 @@ ul li {
 ul li:hover {
   padding: 0.2rem 0.2rem;
   border-radius: 5px;
-  background-color: brown;
+  background-color: green;
 
   color: white;
 }
 
 ul .router-link-active {
   border-radius: 5px;
-  background-color: brown;
+  background-color: green;
   /* border-bottom: 2px solid brown; */
 
   color: white;
