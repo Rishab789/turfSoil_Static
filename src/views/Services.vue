@@ -7,8 +7,32 @@ import { RouterLink } from "vue-router";
     <div class="px-5 md:px-24 lg:px-24">
       <div class="text-3xl md:text-4xl lg:text-5xl text-center">Services</div>
       <div
-        class="flex flex-col md:flex-row lg:flex-row justify-between w-full my-10"
+        class="flex flex-col md:flex-row lg:flex-row justify-between w-full my-10 gap-x-10"
       >
+        <div class="md:w-1/3 lg:w-1/3 text-sm hidden md:block lg:block">
+          <p class="my-2">
+            Field evaluations by Turf Diagnostics feature Gmax field hardness
+            testing, and a thorough evaluation of your sports field. Lab testing
+            also available.
+          </p>
+          <p class="my-2">
+            Laboratory analyses of green roof growing media, drainage material,
+            and other green roof components.
+          </p>
+          <p class="my-2">
+            Testing of greens mix, bunker sands, topdress, diagnostic core
+            evaluations, drainage and compaction testing,and more.
+          </p>
+          <p class="my-2">
+            Evaluation of soils, sands, gravels, and amendments for both natural
+            and synthetic turf fields.
+          </p>
+          <p class="my-2">
+            Specialty soil mix design and testing, including biosoils, retention
+            basins, structural soils, and green roofs.
+          </p>
+          <p>Brief descriptions of some of our most common tests.</p>
+        </div>
         <div class="md:w-1/3 lg:w-1/3">
           <p class="text-xl mb-5 text-red-500">
             Click on a link below to learn more
@@ -76,30 +100,7 @@ import { RouterLink } from "vue-router";
             </RouterLink>
           </ul>
         </div>
-        <div class="md:w-1/3 lg:w-1/3 text-sm hidden md:block lg:block">
-          <p class="my-2">
-            Field evaluations by Turf Diagnostics feature Gmax field hardness
-            testing, and a thorough evaluation of your sports field. Lab testing
-            also available.
-          </p>
-          <p class="my-2">
-            Laboratory analyses of green roof growing media, drainage material,
-            and other green roof components.
-          </p>
-          <p class="my-2">
-            Testing of greens mix, bunker sands, topdress, diagnostic core
-            evaluations, drainage and compaction testing,and more.
-          </p>
-          <p class="my-2">
-            Evaluation of soils, sands, gravels, and amendments for both natural
-            and synthetic turf fields.
-          </p>
-          <p class="my-2">
-            Specialty soil mix design and testing, including biosoils, retention
-            basins, structural soils, and green roofs.
-          </p>
-          <p>Brief descriptions of some of our most common tests.</p>
-        </div>
+
         <div class="md:w-1/3 lg:w-1/3 text-sm">
           <img :src="image" class="mx-auto" />
           <p>

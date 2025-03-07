@@ -39,11 +39,90 @@ const sendForm = async () => {
       Staff / Contacts
     </div>
 
-    <div class="w-full px-5 md:px-24 lg:px-24">
+    <div
+      class="w-full flex flex-col md:flex-row lg:flex-row gap-2 px-5 md:px-24 lg:px-24"
+    >
       <!-- contact information  -->
+      <div class="md:w-1/2 lg:w-1/2 lg:px-10 mt-16">
+        <p class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl my-2">
+          Contact information:
+        </p>
+        <div class="my-5">
+          <p>Telephone: +1 855-769-4231</p>
+          <p>
+            E-mail:
+            <a href="lab@turfdiag.com" class="underline">lab@turfdiag.com</a>
+          </p>
+        </div>
+        <p class="my-5">
+          Turf & Soil Diagnostics has branches located in Linwood, KS and
+          Trumansburg, NY.
+        </p>
+        <p class="my-5">
+          Please stop by when you are in the area. We are happy to arrange lab
+          tours for interested customers.
+        </p>
 
+        <div class="my-5">
+          <p class="text-red-400">Turf & Soil Diagnostics - NY</p>
+          <p>35 King Street</p>
+          <p>Trumansburg, NY 14886 USA</p>
+        </div>
+        <div class="my-5">
+          <p class="text-red-400">Turf & Soil Diagnostics - KS</p>
+          <p>613 E. 1st Street</p>
+          <p>Linwood, KS 66052 USA</p>
+        </div>
+
+        <div class="">
+          <p class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl my-5">
+            Contact form:
+          </p>
+          <form class="flex flex-col gap-y-5" @submit.prevent="sendForm">
+            <div>
+              <input
+                v-model="formData.name"
+                type="text"
+                placeholder="Name*"
+                required
+                class="border border-black w-full h-10 px-2"
+              />
+            </div>
+            <div>
+              <input
+                v-model="formData.email"
+                required
+                type="email"
+                placeholder="Email*"
+                class="border border-black w-full h-10 px-2"
+              />
+            </div>
+            <div>
+              <input
+                v-model="formData.phone"
+                type="text"
+                placeholder="Phone"
+                class="border border-black w-full h-10 px-2"
+              />
+            </div>
+            <div>
+              <textarea
+                v-model="formData.message"
+                required
+                placeholder="Message*"
+                class="border border-black w-full h-32 px-2"
+              ></textarea>
+            </div>
+            <div class="flex justify-end">
+              <button class="border border-black px-6 py-2" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
       <!-- staff contacts  -->
-      <div class="staff-content">
+      <div class="md:w-1/2 lg:w-1/2 staff-content">
         <div class="my-5">
           <span class="">Duane Otto - President </span>
           <p>
@@ -71,7 +150,6 @@ const sendForm = async () => {
           involved the statistical evaluation of mathematical
           evapo-transpiration models.
         </p>
-
         <div class="my-5">
           <span>Sam Ferro - Vice President </span>
           <p>
@@ -132,87 +210,6 @@ const sendForm = async () => {
           Management certificate from the University of Georgia.
         </p>
       </div>
-      <div class="flex flex-col md:flex-row lg:flex-row">
-        <div class="py-5">
-          <p class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl my-2">
-            Contact information:
-          </p>
-          <div class="my-5">
-            <p>Telephone: +1 855-769-4231</p>
-            <p>
-              E-mail:
-              <a href="lab@turfdiag.com" class="underline">lab@turfdiag.com</a>
-            </p>
-          </div>
-          <p class="my-5">
-            Turf & Soil Diagnostics has branches located in Linwood, KS and
-            Trumansburg, NY.
-          </p>
-          <p class="my-5">
-            Please stop by when you are in the area. We are happy to arrange lab
-            tours for interested customers.
-          </p>
-
-          <div class="my-5">
-            <p class="text-red-400">Turf & Soil Diagnostics - NY</p>
-            <p>35 King Street</p>
-            <p>Trumansburg, NY 14886 USA</p>
-          </div>
-          <div class="my-5">
-            <p class="text-red-400">Turf & Soil Diagnostics - KS</p>
-            <p>613 E. 1st Street</p>
-            <p>Linwood, KS 66052 USA</p>
-          </div>
-        </div>
-        <div class="md:w-1/2 lg:w-1/2">
-          <div class="mx-auto">
-            <p class="text-xl sm:text-3xl md:text-4xl lg:text-4xl my-5">
-              Contact form:
-            </p>
-            <form class="flex flex-col gap-y-5" @submit.prevent="sendForm">
-              <div>
-                <input
-                  v-model="formData.name"
-                  type="text"
-                  placeholder="Name*"
-                  required
-                  class="border border-black w-full h-10 px-2"
-                />
-              </div>
-              <div>
-                <input
-                  v-model="formData.email"
-                  required
-                  type="email"
-                  placeholder="Email*"
-                  class="border border-black w-full h-10 px-2"
-                />
-              </div>
-              <div>
-                <input
-                  v-model="formData.phone"
-                  type="text"
-                  placeholder="Phone"
-                  class="border border-black w-full h-10 px-2"
-                />
-              </div>
-              <div>
-                <textarea
-                  v-model="formData.message"
-                  required
-                  placeholder="Message*"
-                  class="border border-black w-full h-32 px-2"
-                ></textarea>
-              </div>
-              <div class="flex justify-end">
-                <button class="border border-black px-6 py-2" type="submit">
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </div>
 
     <BottomMenu></BottomMenu>
@@ -236,8 +233,8 @@ span {
   color: white;
 }
 
-/* .staff-content p,
+.staff-content p,
 span {
   font-size: 0.9rem;
-} */
+}
 </style>
